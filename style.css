@@ -1,0 +1,338 @@
+body {
+ margin: 0;
+ padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+ background: #264796;
+ padding: 24px 0;
+}
+
+header #logo {
+	float: left;
+	width: 279px;
+	height: 48px;
+	padding-left: 5rem;
+	background: url(img/logo.svg) no-repeat bottom;
+}
+
+header #site-menu {
+ margin-left: 5rem;
+ font-size: 20px;
+}
+ 
+header #site-menu ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+}
+     
+header #site-menu ul li {
+ display: inline-block;
+}
+     
+header #site-menu ul li a {
+ display: inline-block;
+ padding: 10px;
+ text-decoration: none;
+ color: #FFFF;
+ font-weight: bold;
+}
+
+#top-info{
+ background: url(./img/TopInfo.jpg);
+ background-position: 50% 0;
+ background-repeat: no-repeat;
+ height: 492px;
+ position: relative;
+}
+
+#top-text-block{
+ font-family: "RobotoLight";
+ font-size: 17px;
+ position: absolute;
+ right: 0;
+ top: 63px;
+ max-width: 520px;
+}
+
+#top-info-title{
+ font-family: "Rubik";
+ color: #212121;
+ margin: 0 0 25px;
+ line-height: 1.1em;
+ font-size: 48px;
+}
+
+#top-info-title::after{
+ width: 78px;
+ height: 3px;
+ background: #fc8215;
+ display: block;
+ content: "";
+ margin: 23px 0 0;
+}
+
+#top-info ul{
+ margin: 45px 0 0;
+ list-style: none;
+ padding: 0;
+}
+
+#top-info ul li{
+ background: url(./img/top-content-icon.png);
+ background-position: 0% 0;
+ background-repeat: no-repeat;
+ padding: 1px 8px 5px 37px;
+ margin: 0 0 28px;
+}
+
+#price-title{
+ background: #e9e9e9;
+ width: 100%;
+ height: 8rem;
+ text-align: center;
+ padding-top: 1rem;
+}
+
+#price-title h1{
+	font-family: "RobotoLight";
+ font-size: 48px;
+}
+
+#price-left{
+	float: left;
+ width: 27%;
+}
+
+#promo-block{
+	background-image: url(./img/banner.jpg);
+	background-color: #f4f4f4;
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	padding: 30px 30px 275px 35px;
+	margin: 30px 25px 55px 25px;
+}
+
+#promo-title{
+	font-family: "RobotoMedium";
+	color: #212121;
+	margin: 0 0 22px;
+	font-size: 20px;
+}
+
+#promo-title::after{
+	width: 78px;
+	height: 3px;
+	background: #fc8215;
+	display: block;
+	content: "";
+	margin: 13px 0 0;
+}
+
+#price-right{
+	float: left;
+	width: 73%;
+}
+
+#table-container{
+	padding: 0 0 0 36px;
+	margin: 30px 35px 0px -20px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+tr:hover {
+	background-color: #f5f5f5;
+}
+
+#form-title {
+	background-color: #e9e9e9;
+    width: 100%;
+    height: 8rem;
+    text-align: center;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-title h1 {
+	font-family: "RobotoLight";
+	font-size: 48px;
+}
+
+#form-container {
+    margin: 15px auto;
+    padding: 20px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.success-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.success-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+footer{
+	width: 100%;
+	height: 284px;
+	bottom: 0px;
+	background: #264796;
+	border-top: 1px solid #516cab;
+	color: #ffffff;
+	padding: 30px 0 28px;
+	bottom: 0
+}
+
+#footer-content{
+	max-width: 1100px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#contacts{
+	float: left;
+ line-height: normal;
+ width: 32%;
+}
+
+#contacts-title{
+	font-family: "RobotoMedium";
+ color: #fff;
+ margin: 0 0 25px;
+ line-height: 1.1em;
+ font-size: 16px;
+}
+
+#contacts-adress{
+	background: url(img/map-footer.png);
+	background-position: 0% 0;
+	background-repeat: no-repeat;
+	padding: 1px 0 1px 29px;
+	margin: 0 0 15px;
+}
+
+#contacts-phone{
+	background: url(img/tel-footer.png);
+	background-position: 0% 0;
+	background-repeat: no-repeat;
+	padding: 1px 0 1px 29px;
+}
+
+#contacts-social{
+	margin: 65px 0 0;
+}
+
+#contacts-social span{
+	display: inline-block;
+ vertical-align: middle;
+ margin: 0 16px 0 0;
+}
+
+#link{
+	box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+#link a{
+	display: inline-block;
+ vertical-align: middle;
+ margin: 10px -5px;
+}
+
+#link img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+#schedule{
+	line-height: normal;
+	float: left;
+	width: 29%;
+}
+
+#schedule-title{
+	font-family: "RobotoMedium";
+ color: #fff;
+ margin: 0 0 25px;
+ line-height: 1.1em;
+ font-size: 16px;
+}
+
+#schedule-content{
+	background: url(./img/time-footer.png);
+	background-position: 0% 0;
+	background-repeat: no-repeat;
+	padding: 0 0 0 31px;
+}
+
+#schedule p{
+	padding: 0 0 8px;
+ margin: 0px;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+  <meta charset="UTF-8">
+  <title>Cервисный центр</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+</head>
+<body>
+  <header>
+    <div id="logo"></div>
+    <nav id="site-menu">
+      <ul>
+        <li><a href="#top-info"><b>Главная</b></a></li>
+        <li><a href="#price-title"><b>Прайс-лист</b></a></li>
+        <li><a href="#form-title"><b>Записаться</b></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="top-info">
+      <div id="top-text-block">
+        <div id="top-info-title">Ремонт техники</div>
+        Обратившись к нам, вы гарантированно получите высокий уровень сервиса, а также:
+        <ul>
+          <li>Качественный ремонт</li>
+          <li>Оригинальные запчасти</li>
+          <li>Профессиональную диагностику</li>
+          <li>Гарантию на услуги</li>
+        </ul>
+      </div>
+    </div>
+    <div id="price-title">
+      <h1>Прайс - лист</h1>
+    </div>
+    <div id="price-list">
+      <div id="price-left">
+        <div id="promo-block">
+          <div id="promo-title">Экспресс ремонт</div>
+          <div id="promo-text">Сделаем Ваше устройство быстро*! Ремонт займет от 20 минут.</div>
+          <br>
+          <br>
+          * +20% стоимости работы.
+        </div>
+      </div>
+      <div id="price-right">
+        <div id="table-container">
+          <table>
+            <tr>
+              <th>Услуга</th>
+              <th>Цена</th>
+            </tr>
+            <tr>
+              <td>Диагностика устройтва</td>
+              <td>500 руб</td>
+            </tr>
+            <tr>
+              <td>Обновление ПО устройства. Включает установку русифицированной версии</td>
+              <td>500-1000 руб</td>
+            </tr>
+            <tr>
+              <td>Простой механический ремонт 1-ой категории сложности</td>
+              <td>650 руб</td>
+            </tr>
+            <tr>
+              <td>Сложный механический ремонт 2-й категории сложности</td>
+              <td>800 руб</td>
+            </tr>
+            <tr>
+              <td>Ремонт электрических цепей телефона, пропайка, пропайка с заменой компонентов для телефонов 1-ой категории сложности.</td>
+              <td>500 руб</td>
+            </tr>
+            <tr>
+              <td>Сложный электрический ремонт 2-ой категории сложности</td>
+              <td>800 руб</td>
+            </tr>
+            <tr>
+              <td>Чистка от коррозии</td>
+              <td>1000-2500 руб</td>
+            </tr>
+            <tr>
+              <td>Ремонт ноутбуков и нетбуков</td>
+              <td>800-2000 руб</td>
+            </tr>
+            <tr>
+              <td>Резервирование и восстановление данных</td>
+              <td>от 1000 руб</td>
+            </tr>
+            <tr>
+              <td>Аппаратный ремонт системных модулей</td>
+              <td>600 руб</td>
+            </tr>
+            <tr>
+              <td>ЭКСПРЕСС ремонт</td>
+              <td>+ 20 % стоимости работы</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="form-title">
+      <h1>Заполнить форму</h1>
+    </div>
+    <div id="form-container">
+      <form action="submit.php" method="post" onsubmit="return validateForm()">
+        <label for="first_name">Имя:</label>
+        <input type="text" id="first_name" name="first_name" required>
+
+        <label for="last_name">Фамилия:</label>
+        <input type="text" id="last_name" name="last_name" required>
+
+        <label for="phone_number">Номер телефона:</label>
+        <input type="phone_number" id="phone_number" name="phone_number" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="device_type">Ваше устройство:</label>
+        <input type="device_type" id="device_type" name="device_type" required>
+
+        <label for="problem_description">Описание проблемы:</label>
+        <input type="problem_description" id="problem_description" name="problem_description" required>
+
+        <input type="submit" value="Отправить" onclick="submitForm()">
+        </form>
+    </div>
+    <div class="success-popup" id="successPopup">
+      <div class="success-content">
+          <span class="close" onclick="closeSuccessMessage()">&times;</span>
+          <p>Данные отправлены. Спасибо!</p>
+      </div>
+  </div>
+  </main>
+  <footer>
+    <div id="footer-content">
+      <div id="contacts">
+        <div id="contacts-title">Контакты</div>
+        <div id="contacts-adress">Ставрополь, ул. Ленина, д.1</div>
+        <div id="contacts-phone">8 (961) 484 0136</div>
+        <div id="contacts-social">
+          <span>Мы в социальных сетях!</span>
+          <div id="link">
+            <a href="https://vk.com/ozeroffilia"><img src="./img/vk.png"></a>
+          </div>
+        </div>
+      </div>
+      <div id="schedule">
+        <div id="schedule-title">Режим работы</div>
+        <div id="schedule-content">
+          <p>Пн. - Пт. с 9:00 до 20:00</p>
+          <p>Сб. с 10:00 до 16:00</p>
+          <p>Вс. - выходной</p>
+        </div>
+      </div>
+      <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5638.778438775729!2d41.939746803687534!3d45.03732296908318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f900a138372269%3A0x333f5c5c4f11a426!2z0KHQmNCV0KDQoNCQLCDRgdC10YDQstC40YHQvdGL0Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1684693590756!5m2!1sru!2sru" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </footer>
+  </div>
+</body>
+</html>
