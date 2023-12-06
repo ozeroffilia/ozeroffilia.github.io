@@ -1,4 +1,10 @@
 <?php
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Allow: POST');
+    http_response_code(405);
+    exit('Method Not Allowed');
+}
+
 // Подключение к базе данных
 $host = '127.0.0.1';
 $dbname = 'service-center';
